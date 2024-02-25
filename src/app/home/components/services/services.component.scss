@@ -1,0 +1,21 @@
+$main-clr:#f61e3f;
+
+#services {
+
+  .services
+  {
+    text-align: center;
+    &:hover svg
+    {
+      fill: $main-clr;
+      transform: scale(1.1);
+    }
+    svg 
+    {
+      width: 25% ;
+      transition: all 0.2s;
+    }
+  }
+}
+
+

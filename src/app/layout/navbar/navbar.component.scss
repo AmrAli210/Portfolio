@@ -1,0 +1,93 @@
+$font-family: AmrAli;
+
+.dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.6s;
+  li,
+  a {
+    transition: all 0.3s;
+    &:hover {
+      color: black !important;
+    }
+  }
+}
+
+nav {
+  font-family: $font-family;
+  position: fixed;
+  z-index: 999;
+  background-color: transparent;
+  .nav-logo {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .nav-info {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        display: flex;
+        position: relative;
+        margin-right: 2rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: rgb(255, 0, 0);
+          top: 100%;
+          left: 0;
+          transition: transform 0.5s;
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+        &:hover {
+          &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+          a {
+            color: black;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: rgba(128, 128, 128, 0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          transition: all 0.5s;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: black !important ;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    top: 100%;
+    left: 0;
+  }
+}

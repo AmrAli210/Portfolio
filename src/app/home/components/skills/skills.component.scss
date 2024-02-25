@@ -1,0 +1,51 @@
+$main-clr: #f61e3f;
+
+#skills {
+    
+  .skills {
+    clip-path: circle(50% at 50% 50%);
+    padding: 1rem;
+    background-color: rgb(232, 230, 230);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(246, 30, 63, 0.3);
+      transition: all 0.4s ease-in-out;
+      z-index: -1;
+      clip-path: circle(0% at 50% 50%);
+    }
+
+    &:hover::before {
+      clip-path: circle(100% at 50% 50%);
+    }
+
+    &:hover .letter-clr {
+      color: black !important;
+    }
+
+    &:hover .word-clr {
+      color: $main-clr;
+    }
+  }
+
+  h3 {
+    transition: all 0.3s;
+    font-size: 1.5rem;
+
+    .letter-clr {
+      color: $main-clr;
+      transition: all 0.3s;
+    }
+
+    .word-clr {
+      transition: all 0.3s;
+    }
+  }
+}

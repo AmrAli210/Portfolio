@@ -1,0 +1,64 @@
+/* Global styles to this file */
+
+ $main-clr:#f61e3f;
+
+.main-clr {
+  color: $main-clr;
+}
+
+.main-bg
+{
+  background-color: rgb(244, 244, 244);
+}
+
+@font-face {
+  font-family: "AmrAli";
+  font-style: normal;
+  src: url("./assets/fonts/Lora-VariableFont_wght.ttf") format("ttf");
+}
+
+
+.title {
+  position: relative;
+  padding : 5rem 0;
+
+  .large-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(128, 128, 128, 0.2);
+    padding-top: 0;
+    line-height: 0;
+    letter-spacing: 3.5rem;
+    font-size: 15rem;
+  }
+  .small-title {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    padding-bottom: 0.3rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10rem;
+      height: 1px;
+      background-color: $main-clr;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5rem;
+      height: 1px;
+      background-color: $main-clr;
+    }
+  }
+}
+
+

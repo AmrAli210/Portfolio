@@ -1,0 +1,35 @@
+<section class="main-bg" id="contact">
+    <div class="container py-5">
+        <div class="title">
+            <p class="large-title">|Contact|</p>
+            <h2 class="text-center small-title">Contact</h2>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-md-5">
+                <img class="w-100" src="/assets/imgs/contact.png" alt="">
+            </div>
+            
+            <div class="col-md-7">
+                <div class="contact-info">
+                    <h2>If you have any questions <br/> please don't hesitate to contact me. </h2>
+                    <h4>My Phone Number Is :<a class="main-clr" href="https://wa.me/+201123171936" target="_parent" >+201123171936</a></h4>
+                    <p>Alternatively, please send me a message using the contact form.</p>
+                    <form id="contact-form" [formGroup]="contact" (ngSubmit)="submit()" name="contact" method="post" netlify>
+                        <div class="row pb-3">
+                            <div class="col-md-6">
+                                <input formControlName="email" class="form-control" type="text" name="email" placeholder="Your E-mail"/>
+                            </div>
+                            <div class="col-md-6">
+                                <input formControlName="name" class="form-control" type="text" name="name"  placeholder="Your Name"/>
+                            </div>
+                       </div>
+                        <textarea rows="7" formControlName="message" class="form-control" type="text" name="message" placeholder="Message"></textarea>
+                        <button  class="submit-btn" type="submit">Send Message </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

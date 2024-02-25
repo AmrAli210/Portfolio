@@ -1,0 +1,45 @@
+$font-family: AmrAli;
+$main-clr:#f61e3f;
+
+header {
+  font-family: $font-family;
+  position: relative;
+
+  #particles-js {
+    height: 100vh;
+    position: absolute;
+  }
+
+  .my-info {
+    position: relative;
+    z-index: 4;
+    fa-icon 
+    {
+       font-size: 1.4rem;
+       color: black;
+       padding: 0rem 0.7rem;
+       transition: all 0.3s;
+       &:hover
+       {
+          color: $main-clr ;
+       }
+    }
+
+    .my-title {
+      
+      h3 {
+        font-size: 4.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      h2 {
+        font-size: 4rem;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

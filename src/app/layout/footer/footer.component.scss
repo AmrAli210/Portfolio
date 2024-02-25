@@ -1,0 +1,21 @@
+$main-clr:#f61e3f;
+
+footer{
+    background-color: #181818;
+    padding: 2rem 0;
+     h6 
+     {
+        color: white;
+     }
+     fa-icon 
+     {
+        font-size: 1.1rem;
+        color: white;
+        padding: 0rem 0.7rem;
+        transition: all 0.3s;
+        &:hover
+        {
+           color: $main-clr ;
+        }
+     }
+}
